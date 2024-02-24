@@ -1,399 +1,453 @@
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Favicons -->
-    <link href="./images/min.png" rel="icon">
-    <script defer src="theme.js"></script>
-    <link rel="stylesheet" type="text/css" href="pjstyle.css" />
-    <link rel="stylesheet" type="text/css" href="footer.css" />
-    <link rel="stylesheet" type="text/css" href="skills.css" />
-    <link rel="stylesheet" type="text/css" href="underlined.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/highcharts-more.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
-    <title>Biplaba Samantray</title>
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Favicons -->
+        <link href="./images/min.png" rel="icon">
+        <script defer src="theme.js"></script>
+        <link rel="stylesheet" type="text/css" href="pjstyle.css" />
+        <link rel="stylesheet" type="text/css" href="footer.css" />
+        <link rel="stylesheet" type="text/css" href="skills.css" />
+        <link rel="stylesheet" type="text/css" href="underlined.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+            rel="stylesheet" />
+        <title>Biplaba Samantray</title>
+    </head>
 
-<body>
-    <nav class="navbar">
-        <ul class="navbar-nav">
-            <li class="logo">
-                <a href="index.html" class="nav-link">
-                    <span class="link-text logo-text">Biplaba</span>
-                    <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x">
-              <g class="fa-group">
-                <path
-                  fill="currentColor"
-                  d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
-                  class="fa-secondary"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
-                  class="fa-primary"
-                ></path>
-              </g>
-            </svg>
-                </a>
-            </li>
+    <body>
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="logo">
+                    <a href="index.html" class="nav-link">
+                        <span class="link-text logo-text">Biplaba</span>
+                        <svg aria-hidden="true" focusable="false"
+                            data-prefix="fad" data-icon="angle-double-right"
+                            role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                            class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x">
+                            <g class="fa-group">
+                                <path
+                                    fill="currentColor"
+                                    d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                                    class="fa-secondary"></path>
+                                <path
+                                    fill="currentColor"
+                                    d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                                    class="fa-primary"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a href="#about" class="nav-link">
-                    <i class="fa fa-user theme-icon" id="lightIcon" style="font-size:24px"></i>
-                    <span class="link-text">About</span>
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class="fa fa-user theme-icon" id="lightIcon"
+                            style="font-size:24px"></i>
+                        <span class="link-text">About</span>
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a href="#projects" class="nav-link">
-                    <i class="fa fa-code theme-icon" id="lightIcon" style="font-size:24px"></i>
-                    <span class="link-text">Works</span>
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">
+                        <i class="fa fa-code theme-icon" id="lightIcon"
+                            style="font-size:24px"></i>
+                        <span class="link-text">Works</span>
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a href="#contact" class="nav-link">
-                    <i class="fa fa-address-book-o theme-icon" id="lightIcon" style="font-size:24px"></i>
-                    <span class="link-text">Contact</span>
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fa fa-address-book-o theme-icon"
+                            id="lightIcon" style="font-size:24px"></i>
+                        <span class="link-text">Contact</span>
+                    </a>
+                </li>
 
-            <li class="nav-item" id="themeButton">
-                <a href="#" class="nav-link">
-                    <svg class="theme-icon" id="lightIcon" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="moon-stars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-moon-stars fa-w-16 fa-7x">
-              <g class="fa-group">
-                <path
-                  fill="currentColor"
-                  d="M320 32L304 0l-16 32-32 16 32 16 16 32 16-32 32-16zm138.7 149.3L432 128l-26.7 53.3L352 208l53.3 26.7L432 288l26.7-53.3L512 208z"
-                  class="fa-secondary"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M332.2 426.4c8.1-1.6 13.9 8 8.6 14.5a191.18 191.18 0 0 1-149 71.1C85.8 512 0 426 0 320c0-120 108.7-210.6 227-188.8 8.2 1.6 10.1 12.6 2.8 16.7a150.3 150.3 0 0 0-76.1 130.8c0 94 85.4 165.4 178.5 147.7z"
-                  class="fa-primary"
-                ></path>
-              </g>
-            </svg>
-                    <svg class="theme-icon" id="solarIcon" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="sun" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-sun fa-w-16 fa-7x">
-              <g class="fa-group">
-                <path
-                  fill="currentColor"
-                  d="M502.42 240.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.41-94.8a17.31 17.31 0 0 0-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4a17.31 17.31 0 0 0 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.41-33.5 47.3 94.7a17.31 17.31 0 0 0 31 0l47.31-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3a17.33 17.33 0 0 0 .2-31.1zm-155.9 106c-49.91 49.9-131.11 49.9-181 0a128.13 128.13 0 0 1 0-181c49.9-49.9 131.1-49.9 181 0a128.13 128.13 0 0 1 0 181z"
-                  class="fa-secondary"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M352 256a96 96 0 1 1-96-96 96.15 96.15 0 0 1 96 96z"
-                  class="fa-primary"
-                ></path>
-              </g>
-            </svg>
-                    <svg class="theme-icon" id="darkIcon" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="sunglasses" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-sunglasses fa-w-18 fa-7x">
-              <g class="fa-group">
-                <path
-                  fill="currentColor"
-                  d="M574.09 280.38L528.75 98.66a87.94 87.94 0 0 0-113.19-62.14l-15.25 5.08a16 16 0 0 0-10.12 20.25L395.25 77a16 16 0 0 0 20.22 10.13l13.19-4.39c10.87-3.63 23-3.57 33.15 1.73a39.59 39.59 0 0 1 20.38 25.81l38.47 153.83a276.7 276.7 0 0 0-81.22-12.47c-34.75 0-74 7-114.85 26.75h-73.18c-40.85-19.75-80.07-26.75-114.85-26.75a276.75 276.75 0 0 0-81.22 12.45l38.47-153.8a39.61 39.61 0 0 1 20.38-25.82c10.15-5.29 22.28-5.34 33.15-1.73l13.16 4.39A16 16 0 0 0 180.75 77l5.06-15.19a16 16 0 0 0-10.12-20.21l-15.25-5.08A87.95 87.95 0 0 0 47.25 98.65L1.91 280.38A75.35 75.35 0 0 0 0 295.86v70.25C0 429 51.59 480 115.19 480h37.12c60.28 0 110.38-45.94 114.88-105.37l2.93-38.63h35.76l2.93 38.63c4.5 59.43 54.6 105.37 114.88 105.37h37.12C524.41 480 576 429 576 366.13v-70.25a62.67 62.67 0 0 0-1.91-15.5zM203.38 369.8c-2 25.9-24.41 46.2-51.07 46.2h-37.12C87 416 64 393.63 64 366.11v-37.55a217.35 217.35 0 0 1 72.59-12.9 196.51 196.51 0 0 1 69.91 12.9zM512 366.13c0 27.5-23 49.87-51.19 49.87h-37.12c-26.69 0-49.1-20.3-51.07-46.2l-3.12-41.24a196.55 196.55 0 0 1 69.94-12.9A217.41 217.41 0 0 1 512 328.58z"
-                  class="fa-secondary"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M64.19 367.9c0-.61-.19-1.18-.19-1.8 0 27.53 23 49.9 51.19 49.9h37.12c26.66 0 49.1-20.3 51.07-46.2l3.12-41.24c-14-5.29-28.31-8.38-42.78-10.42zm404-50l-95.83 47.91.3 4c2 25.9 24.38 46.2 51.07 46.2h37.12C489 416 512 393.63 512 366.13v-37.55a227.76 227.76 0 0 0-43.85-10.66z"
-                  class="fa-primary"
-                ></path>
-              </g>
-            </svg>
-                    <span class="link-text">Themify</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+                <li class="nav-item" id="themeButton">
+                    <a href="#" class="nav-link">
+                        <svg class="theme-icon" id="lightIcon"
+                            aria-hidden="true" focusable="false"
+                            data-prefix="fad" data-icon="moon-stars" role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            class="svg-inline--fa fa-moon-stars fa-w-16 fa-7x">
+                            <g class="fa-group">
+                                <path
+                                    fill="currentColor"
+                                    d="M320 32L304 0l-16 32-32 16 32 16 16 32 16-32 32-16zm138.7 149.3L432 128l-26.7 53.3L352 208l53.3 26.7L432 288l26.7-53.3L512 208z"
+                                    class="fa-secondary"></path>
+                                <path
+                                    fill="currentColor"
+                                    d="M332.2 426.4c8.1-1.6 13.9 8 8.6 14.5a191.18 191.18 0 0 1-149 71.1C85.8 512 0 426 0 320c0-120 108.7-210.6 227-188.8 8.2 1.6 10.1 12.6 2.8 16.7a150.3 150.3 0 0 0-76.1 130.8c0 94 85.4 165.4 178.5 147.7z"
+                                    class="fa-primary"></path>
+                            </g>
+                        </svg>
+                        <svg class="theme-icon" id="solarIcon"
+                            aria-hidden="true" focusable="false"
+                            data-prefix="fad" data-icon="sun" role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            class="svg-inline--fa fa-sun fa-w-16 fa-7x">
+                            <g class="fa-group">
+                                <path
+                                    fill="currentColor"
+                                    d="M502.42 240.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.41-94.8a17.31 17.31 0 0 0-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4a17.31 17.31 0 0 0 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.41-33.5 47.3 94.7a17.31 17.31 0 0 0 31 0l47.31-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3a17.33 17.33 0 0 0 .2-31.1zm-155.9 106c-49.91 49.9-131.11 49.9-181 0a128.13 128.13 0 0 1 0-181c49.9-49.9 131.1-49.9 181 0a128.13 128.13 0 0 1 0 181z"
+                                    class="fa-secondary"></path>
+                                <path
+                                    fill="currentColor"
+                                    d="M352 256a96 96 0 1 1-96-96 96.15 96.15 0 0 1 96 96z"
+                                    class="fa-primary"></path>
+                            </g>
+                        </svg>
+                        <svg class="theme-icon" id="darkIcon" aria-hidden="true"
+                            focusable="false" data-prefix="fad"
+                            data-icon="sunglasses" role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512"
+                            class="svg-inline--fa fa-sunglasses fa-w-18 fa-7x">
+                            <g class="fa-group">
+                                <path
+                                    fill="currentColor"
+                                    d="M574.09 280.38L528.75 98.66a87.94 87.94 0 0 0-113.19-62.14l-15.25 5.08a16 16 0 0 0-10.12 20.25L395.25 77a16 16 0 0 0 20.22 10.13l13.19-4.39c10.87-3.63 23-3.57 33.15 1.73a39.59 39.59 0 0 1 20.38 25.81l38.47 153.83a276.7 276.7 0 0 0-81.22-12.47c-34.75 0-74 7-114.85 26.75h-73.18c-40.85-19.75-80.07-26.75-114.85-26.75a276.75 276.75 0 0 0-81.22 12.45l38.47-153.8a39.61 39.61 0 0 1 20.38-25.82c10.15-5.29 22.28-5.34 33.15-1.73l13.16 4.39A16 16 0 0 0 180.75 77l5.06-15.19a16 16 0 0 0-10.12-20.21l-15.25-5.08A87.95 87.95 0 0 0 47.25 98.65L1.91 280.38A75.35 75.35 0 0 0 0 295.86v70.25C0 429 51.59 480 115.19 480h37.12c60.28 0 110.38-45.94 114.88-105.37l2.93-38.63h35.76l2.93 38.63c4.5 59.43 54.6 105.37 114.88 105.37h37.12C524.41 480 576 429 576 366.13v-70.25a62.67 62.67 0 0 0-1.91-15.5zM203.38 369.8c-2 25.9-24.41 46.2-51.07 46.2h-37.12C87 416 64 393.63 64 366.11v-37.55a217.35 217.35 0 0 1 72.59-12.9 196.51 196.51 0 0 1 69.91 12.9zM512 366.13c0 27.5-23 49.87-51.19 49.87h-37.12c-26.69 0-49.1-20.3-51.07-46.2l-3.12-41.24a196.55 196.55 0 0 1 69.94-12.9A217.41 217.41 0 0 1 512 328.58z"
+                                    class="fa-secondary"></path>
+                                <path
+                                    fill="currentColor"
+                                    d="M64.19 367.9c0-.61-.19-1.18-.19-1.8 0 27.53 23 49.9 51.19 49.9h37.12c26.66 0 49.1-20.3 51.07-46.2l3.12-41.24c-14-5.29-28.31-8.38-42.78-10.42zm404-50l-95.83 47.91.3 4c2 25.9 24.38 46.2 51.07 46.2h37.12C489 416 512 393.63 512 366.13v-37.55a227.76 227.76 0 0 0-43.85-10.66z"
+                                    class="fa-primary"></path>
+                            </g>
+                        </svg>
+                        <span class="link-text">Themify</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <header class="header">
-        <div class="biplaba-intro-heading">
-            <p class="gratitude">HI, I'AM</p>
-            <img class="bips_logo" src="images/bips.png" alt="bips" />
-            <p class="biplaba-name">Biplaba Samantray</p>
-            <p class="bips-intro"></p>
-        </div>
-        <div>
-            <h2 class="my-desc">
-                Software Engineer | Programmer | Conservationist
-            </h2>
-        </div>
-        <!-- <iframe src="https://open.spotify.com/embed/track/0pqnGHJpmpxLKifKRmU6WP" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+        <header class="header">
+            <div class="biplaba-intro-heading">
+                <p class="gratitude">HI, I'AM</p>
+                <img class="bips_logo" src="images/bips.png" alt="bips" />
+                <p class="biplaba-name">Biplaba Samantray</p>
+                <p class="bips-intro"></p>
+            </div>
+            <div>
+                <h2 class="my-desc">
+                    Software Engineer | Programmer | Conservationist
+                </h2>
+            </div>
+            <!-- <iframe src="https://open.spotify.com/embed/track/0pqnGHJpmpxLKifKRmU6WP" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
 
-        <a href="./resume.html"><span class="underline-opening">📝 my resume</span></a> &nbsp; &nbsp; &nbsp;
-        <a href="./index.html"><span class="underline-opening">☕ biplabas.com</span></a>
-        <div class="output" id="output">
-            <h2 class="cursor"></h2>
-            <p class="second-cursor"></p>
-        </div>
-    </header>
+            <a href="./resume.html"><span class="underline-opening">📝 my
+                    resume</span></a> &nbsp; &nbsp; &nbsp;
+            <a href="./index.html"><span class="underline-opening">☕
+                    biplabas.com</span></a>
+            <div class="output" id="output">
+                <h2 class="cursor"></h2>
+                <p class="second-cursor"></p>
+            </div>
+        </header>
 
-    <main style="background: #ffffff">
-        <div class="about-section" id="about">
-            <div class="about">
-                <h1>ABOUT</h1>
+        <main style="background: #ffffff">
+            <div class="about-section" id="about">
+                <div class="about">
+                    <h1>ABOUT</h1>
+                    <hr />
+                    <p class="about-description">
+                        I am social but not a social-media person who searches
+                        memory within posts. My soul interest covers from the
+                        fragrance of flowers to clover scented gale. Being in
+                        the computer science domain I am much interested in
+                        solving new problems that might be solvable
+                        or not but help me to enhance my approach, skill and
+                        learnings. I love to explore topics like Data structure
+                        and Algorithms, Operating systems, Human evolution and a
+                        little bit of Astronomy. I am highly influenced by and
+                        admire Steve
+                        Jobs as a person, Sapiens as a book and the University
+                        of Hyderabad as an Organization.
+                    </p>
+                    <a href="./timeline.html"><span class="timeline">⏳ Check my
+                            timeline</span></a>
+                </div>
+            </div>
+
+            <div class="project-section" id="projects">
+                <div class="project-heading">
+                    <h1>Portfolio</h1>
+                    <hr />
+                </div>
+                <div class="project">
+                    <div class="container">
+                        <div class="box">
+                            <div class="boxContent">
+                                <i class="fa fa-gamepad icon"></i>
+                                <h1 class="title">Checkers</h1>
+                                <p class="desc">
+                                    Mini-max algorithm with alpha-beta pruning
+                                    based bot game.
+                                    <br /><br />
+                                    <kbd class="strongElement"> Python | Pygame
+                                        | AI bot</kbd>
+                                </p>
+                            </div>
+                            <a
+                                href="https://github.com/bips1996/CheckersGame-Minimax"
+                                target="_blank"></a>
+                        </div>
+                        <div class="box">
+                            <div class="boxContent">
+                                <i class="fa fa-file-code-o icon"></i>
+                                <h1 class="title">TCP file server</h1>
+                                <p class="desc">
+                                    A File server using TCP
+                                    protocol.<br /><br />
+                                    <kbd class="strongElement"> Java |
+                                        Socket.io</kbd> &nbsp
+                                </p>
+                            </div>
+                            <a
+                                href="https://github.com/bips1996/File-Server-Java"
+                                target="_blank"></a>
+                        </div>
+                        <div class="box">
+                            <div class="boxContent">
+                                <i class="fa fa-user-secret icon"></i>
+                                <h1 class="title">Portfolio</h1>
+                                <p class="desc">
+                                    Its better to describe me within my own
+                                    template than classic social-media
+                                    templates.<br />
+                                    <br />
+                                    <kbd class="strongElement"> Html | css |
+                                        Javascript</kbd>
+                                </p>
+                            </div>
+                            <a
+                                href="https://github.com/bips1996/biplab.github.io/blob/master/index.html"
+                                target="_blank"></a>
+                        </div>
+                        <div class="box">
+                            <div class="boxContent">
+                                <i class="fa fa-connectdevelop icon"></i>
+                                <h1 class="title">Prim's algorithm</h1>
+                                <p class="desc">
+                                    Optimization of Prim's algorithm for finding
+                                    MST by implementing adjacency list with
+                                    min-Heap.
+                                    <br />
+                                    <kbd class="strongElement">C++</kbd>
+                                </p>
+                            </div>
+                            <a
+                                href="https://github.com/bips1996/Prim-s-Algorithm"
+                                target="_blank"></a>
+                        </div>
+
+                        <div class="box">
+                            <div class="boxContent">
+                                <i class="fa fa-bitcoin icon"></i>
+                                <h1 class="title">Smart Attendance</h1>
+                                <p class="desc">
+                                    smart contract based attendance
+                                    management.<br /><br />
+                                    <kbd class="strongElement"> Blockchain |
+                                        Solidity | Etherium</kbd>
+                                </p>
+                            </div>
+                            <a
+                                href="https://github.com/bips1996/BlockChainbased-Attendance-mmanagement"
+                                target="_blank"></a>
+                        </div>
+
+                        <div class="box">
+                            <div class="boxContent">
+                                <i class="fa fa-pencil-square-o icon"></i>
+                                <h1 class="title">Copycart</h1>
+                                <p class="desc">
+                                    A e-commerce backend for goods
+                                    exchange<br /><br />
+                                    <kbd class="strongElement"> GraphQL | Node |
+                                        MongoDB</kbd><br />
+                                </p>
+                            </div>
+                            <a
+                                href="https://github.com/bips1996/Copycart_Backend"
+                                target="_blank"></a>
+                        </div>
+
+                        <div class="box">
+                            <div class="boxContent">
+                                <i class="fa fa-play-circle-o icon"></i>
+                                <h1 class="title">Groovy</h1>
+                                <p class="desc">
+                                    A video streaming web appication<br /><br />
+                                    <kbd class="strongElement">Html | Javascript
+                                        | php | XAMPP </kbd><br />
+                                </p>
+                            </div>
+                            <a href="https://github.com/bips1996/Groovy"
+                                target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-section" id="skills">
+                <h1>My skills</h1>
                 <hr />
-                <p class="about-description">
-                    I am social but not a social-media person who searches memory within posts. My soul interest covers from the fragrance of flowers to clover scented gale. Being in the computer science domain I am much interested in solving new problems that might be solvable
-                    or not but help me to enhance my approach, skill and learnings. I love to explore topics like Data structure and Algorithms, Operating systems, Human evolution and a little bit of Astronomy. I am highly influenced by and admire Steve
-                    Jobs as a person, Sapiens as a book and the University of Hyderabad as an Organization.
-                </p>
-                <a href="./timeline.html"><span class="timeline">⏳ Check my timeline</span></a>
-            </div>
-        </div>
+                <div class="skill-container">
+                    <div class="box">
+                        <h3>Languages</h3>
+                        <div class="skill">
+                            <p class="name">C++</p>
+                            <div class="bar">
+                                <span class="points-6"></span>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p class="name">Java</p>
+                            <div class="bar">
+                                <span class="points-7"></span>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p class="name">Python</p>
+                            <div class="bar">
+                                <span class="points-8"></span>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p class="name">Javascript</p>
+                            <div class="bar">
+                                <span class="points-8"></span>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p class="name">SQL</p>
+                            <div class="bar">
+                                <span class="points-6"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h3>Web frameworks</h3>
+                        <div class="skill">
+                            <p class="name">Node</p>
+                            <div class="bar">
+                                <span class="points-6"></span>
+                            </div>
+                        </div>
 
-        <div class="project-section" id="projects">
-            <div class="project-heading">
-                <h1>Portfolio</h1>
-                <hr />
-            </div>
-            <div class="project">
-                <div class="container">
-                    <div class="box">
-                        <div class="boxContent">
-                            <i class="fa fa-gamepad icon"></i>
-                            <h1 class="title">Checkers</h1>
-                            <p class="desc">
-                                Mini-max algorithm with alpha-beta pruning based bot game.
-                                <br /><br />
-                                <kbd class="strongElement"> Python | Pygame | AI bot</kbd>
-                            </p>
+                        <div class="skill">
+                            <p class="name">Fast api</p>
+                            <div class="bar">
+                                <span class="points-9"></span>
+                            </div>
                         </div>
-                        <a href="https://github.com/bips1996/CheckersGame-Minimax" target="_blank"></a>
-                    </div>
-                    <div class="box">
-                        <div class="boxContent">
-                            <i class="fa fa-file-code-o icon"></i>
-                            <h1 class="title">TCP file server</h1>
-                            <p class="desc">
-                                A File server using TCP protocol.<br /><br />
-                                <kbd class="strongElement"> Java | Socket.io</kbd> &nbsp
-                            </p>
+                        <div class="skill">
+                            <p class="name">GraphQL</p>
+                            <div class="bar">
+                                <span class="points-8"></span>
+                            </div>
                         </div>
-                        <a href="https://github.com/bips1996/File-Server-Java" target="_blank"></a>
-                    </div>
-                    <div class="box">
-                        <div class="boxContent">
-                            <i class="fa fa-user-secret icon"></i>
-                            <h1 class="title">Portfolio</h1>
-                            <p class="desc">
-                                Its better to describe me within my own template than classic social-media templates.<br />
-                                <br />
-                                <kbd class="strongElement"> Html | css | Javascript</kbd>
-                            </p>
+                        <div class="skill">
+                            <p class="frontend-name ">React.js</p>
+                            <div class="bar">
+                                <span class="points-8"></span>
+                            </div>
                         </div>
-                        <a href="https://github.com/bips1996/biplab.github.io/blob/master/index.html" target="_blank"></a>
-                    </div>
-                    <div class="box">
-                        <div class="boxContent">
-                            <i class="fa fa-connectdevelop icon"></i>
-                            <h1 class="title">Prim's algorithm</h1>
-                            <p class="desc">
-                                Optimization of Prim's algorithm for finding MST by implementing adjacency list with min-Heap.
-                                <br />
-                                <kbd class="strongElement">C++</kbd>
-                            </p>
+                        <div class="skill">
+                            <p class="frontend-name ">Gatsby</p>
+                            <div class="bar">
+                                <span class="points-8"></span>
+                            </div>
                         </div>
-                        <a href="https://github.com/bips1996/Prim-s-Algorithm" target="_blank"></a>
-                    </div>
-
-
-                    <div class="box">
-                        <div class="boxContent">
-                            <i class="fa fa-bitcoin icon"></i>
-                            <h1 class="title">Smart Attendance</h1>
-                            <p class="desc">
-                                smart contract based attendance management.<br /><br />
-                                <kbd class="strongElement"> Blockchain | Solidity | Etherium</kbd>
-                            </p>
-                        </div>
-                        <a href="https://github.com/bips1996/BlockChainbased-Attendance-mmanagement" target="_blank"></a>
                     </div>
 
                     <div class="box">
-                        <div class="boxContent">
-                            <i class="fa fa-pencil-square-o icon"></i>
-                            <h1 class="title">Copycart</h1>
-                            <p class="desc">
-                                A e-commerce backend for goods exchange<br /><br />
-                                <kbd class="strongElement"> GraphQL | Node | MongoDB</kbd><br />
-                            </p>
+
+                        <h3>Databases</h3>
+
+                        <div class="skill">
+                            <p class="name">PostgreSQL</p>
+                            <div class="bar">
+                                <span class="points-10"></span>
+                            </div>
                         </div>
-                        <a href="https://github.com/bips1996/Copycart_Backend" target="_blank"></a>
+
+                        <div class="skill">
+                            <p class="name">MySQL</p>
+                            <div class="bar">
+                                <span class="points-7"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <p class="name">SQLite</p>
+                            <div class="bar">
+                                <span class="points-7"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <p class="name">MongoDB</p>
+                            <div class="bar">
+                                <span class="points-8"></span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="box">
-                        <div class="boxContent">
-                            <i class="fa fa-play-circle-o icon"></i>
-                            <h1 class="title">Groovy</h1>
-                            <p class="desc">
-                                A video streaming web appication<br /><br />
-                                <kbd class="strongElement">Html | Javascript | php | XAMPP </kbd><br />
-                            </p>
-                        </div>
-                        <a href="https://github.com/bips1996/Groovy" target="_blank"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="skill-section" id="skills">
-            <h1>My skills</h1>
-            <hr />
-            <div class="skill-container">
-                <div class="box">
-                    <h3>Languages</h3>
-                    <div class="skill">
-                        <p class="name">C++</p>
-                        <div class="bar">
-                            <span class="points-6"></span>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <p class="name">Java</p>
-                        <div class="bar">
-                            <span class="points-7"></span>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <p class="name">Python</p>
-                        <div class="bar">
-                            <span class="points-8"></span>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <p class="name">Javascript</p>
-                        <div class="bar">
-                            <span class="points-8"></span>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <p class="name">SQL</p>
-                        <div class="bar">
-                            <span class="points-6"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h3>Web frameworks</h3>
-                    <div class="skill">
-                        <p class="name">Node</p>
-                        <div class="bar">
-                            <span class="points-6"></span>
-                        </div>
-                    </div>
+                        <h3>Devops</h3>
 
-                    <div class="skill">
-                        <p class="name">Fast api</p>
-                        <div class="bar">
-                            <span class="points-9"></span>
+                        <div class="skill">
+                            <p class="name">Docker</p>
+                            <div class="bar">
+                                <span class="points-7"></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <p class="name">GraphQL</p>
-                        <div class="bar">
-                            <span class="points-8"></span>
+
+                        <div class="skill">
+                            <p class="name">GOCD</p>
+                            <div class="bar">
+                                <span class="points-7"></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <p class="frontend-name ">React.js</p>
-                        <div class="bar">
-                            <span class="points-8"></span>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <p class="frontend-name ">Gatsby</p>
-                        <div class="bar">
-                            <span class="points-8"></span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="box">
-
-                    <h3>Databases</h3>
-
-                    <div class="skill">
-                        <p class="name">PostgreSQL</p>
-                        <div class="bar">
-                            <span class="points-10"></span>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <p class="name">MySQL</p>
-                        <div class="bar">
-                            <span class="points-7"></span>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <p class="name">SQLite</p>
-                        <div class="bar">
-                            <span class="points-7"></span>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <p class="name">MongoDB</p>
-                        <div class="bar">
-                            <span class="points-8"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box">
-
-                    <h3>Devops</h3>
-
-                    <div class="skill">
-                        <p class="name">Docker</p>
-                        <div class="bar">
-                            <span class="points-7"></span>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <p class="name">GOCD</p>
-                        <div class="bar">
-                            <span class="points-7"></span>
-                        </div>
-                    </div>
-
-                    <!-- <div class="skill">
+                        <!-- <div class="skill">
                         <p class="name">Agile</p>
                         <div class="bar">
                             <span class="points-8"></span>
                         </div>
                     </div> -->
 
-                    <div class="skill">
-                        <p class="name">GIT</p>
-                        <div class="bar">
-                            <span class="points-8"></span>
+                        <div class="skill">
+                            <p class="name">GIT</p>
+                            <div class="bar">
+                                <span class="points-8"></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <p class="name">AWS</p>
-                        <div class="bar">
-                            <span class="points-5"></span>
+                        <div class="skill">
+                            <p class="name">AWS</p>
+                            <div class="bar">
+                                <span class="points-5"></span>
+                            </div>
                         </div>
+
                     </div>
 
                 </div>
 
-            </div>
-
-
-
-            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-            <script>
+                <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+                <script>
                 var $root = $("html, body");
                 $('a[href^="#"]').click(function() {
                     $root.animate({
@@ -405,56 +459,66 @@
                     return false;
                 });
             </script>
-            <script src="main.js"></script>
-    </main>
+                <script src="main.js"></script>
+            </main>
 
-    <!-- Site footer -->
-    <footer class="footer">
-        <div class="contact-section" id="contact">
-            <div class="inner-contact-section">
-                <div class="contact-heading">
-                    <h3>Contact</h3>
+            <!-- Site footer -->
+            <footer class="footer">
+                <div class="contact-section" id="contact">
+                    <div class="inner-contact-section">
+                        <div class="contact-heading">
+                            <h3>Contact</h3>
+                        </div>
+                        <div class="contact-description">
+                            <p>
+                                Feel free to reach out, I'm every where ❤️<br />
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-description">
-                    <p>
-                        Feel free to reach out, I'm every where ❤️<br />
-                    </p>
+                <div class="social">
+                    <div>
+                        <a href="https://github.com/bips1996" target="_blank">
+                            <i class="fa fa-github git" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/bips96/"
+                            target="_blank">
+                            <i class="fa fa-linkedin in" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/biplab.sam"
+                            target="_blank">
+                            <i class="fa fa-facebook-official fb"
+                                aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=+918637212213"
+                            target="_blank">
+                            <i class="fa fa-whatsapp whatsapp"
+                                aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/i_am__biplab/"
+                            target="_blank">
+                            <i class="fa fa-instagram insta"
+                                aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="mailto:samantaraybiplaba@gmail.com"
+                            target="_blank">
+                            <i class="fa fa-google-plus mail"
+                                aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="social">
-            <div>
-                <a href="https://github.com/bips1996" target="_blank">
-                    <i class="fa fa-github git" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.linkedin.com/in/bips96/" target="_blank">
-                    <i class="fa fa-linkedin in" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.facebook.com/biplab.sam" target="_blank">
-                    <i class="fa fa-facebook-official fb" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div>
-                <a href="https://api.whatsapp.com/send?phone=+918637212213" target="_blank">
-                    <i class="fa fa-whatsapp whatsapp" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.instagram.com/i_am__biplab/" target="_blank">
-                    <i class="fa fa-instagram insta" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div>
-                <a href="mailto:samantaraybiplaba@gmail.com" target="_blank">
-                    <i class="fa fa-google-plus mail" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-</body>
+            </footer>
+        </body>
 
-</html>
+    </html>
