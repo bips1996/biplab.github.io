@@ -1,129 +1,135 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 * {
-    font-family: "Roboto", serif;
-    color: #666;
+  font-family: "Roboto", serif;
+  color: #666;
 }
 
 .skill-section {
-    margin-top: 10%;
-    justify-content: center;
+  margin-top: 10%;
+  justify-content: center;
 }
 
 .skill-section hr {
-    margin-top: -1%;
-    width: 30%;
-    border-top: 3px solid #163149;
+  margin-top: -1%;
+  width: 30%;
+  border-top: 3px solid #163149;
 }
 
 .skill-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: auto;
-    grid-gap: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: auto;
+  grid-gap: 10%;
 }
 
 .skill-section h1 {
-    color: #163149;
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    font-weight: bold;
-    justify-content: center;
-    text-align: center;
+  color: #163149;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
 }
 
 .column {
-    display: inline-block;
-    width: 265px;
+  display: inline-block;
+  width: 265px;
 }
 
 .skill {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .skill p {
-    font-family: Consolas;
-    font-weight: bold;
+  font-family: Consolas;
+  font-weight: bold;
 }
 
-.skill-container .box h3 {
-    color: #10284d;
+.skill-container .box h4 {
+  color: #10284d;
+}
+
+.skill-container .box h4 {
+  color: #10284d;
 }
 
 .name {
-    display: inline-block;
-    width: 76px;
-    margin: 7px 0px;
-    font-size: 14px;
-    vertical-align: top;
-    margin: 2px 0px;
+  display: inline-block;
+  width: 76px;
+  margin: 7px 0px;
+  font-size: 14px;
+  vertical-align: top;
+  margin: 2px 0px;
 }
 
 .frontend-name {
-    display: inline-block;
-    width: 76px;
-    margin: 7px 0px;
-    font-size: 14px;
-    vertical-align: top;
-    margin: 2px 0px;
-    color: #163149;
+  display: inline-block;
+  width: 76px;
+  margin: 7px 0px;
+  font-size: 14px;
+  vertical-align: top;
+  margin: 2px 0px;
+  color: #163149;
 }
 
 .vertical-text {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    text-orientation: sideways;
-    text-align: right;
-    text-orientation: sideways;
-    margin: 1rem;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-orientation: sideways;
+  text-align: right;
+  text-orientation: sideways;
+  margin: 1rem;
 }
 
 .bar {
-    display: inline-block;
-    position: relative;
-    width: 76px;
-    height: 20px;
-    background-color: #1d3f5e;
+  display: inline-block;
+  position: relative;
+  margin-left: 20;
+  width: 76px;
+  height: 8px;
+  border-radius: 50px;
+  background-color: #1d3f5e;
 }
 
 .bar span {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #eee;
-    opacity: 0.8;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #eee;
+  opacity: 0.8;
 }
 
 .bar span.points-1 {
-    width: 90%;
+  width: 90%;
 }
 
 .bar span.points-2 {
-    width: 80%;
+  width: 80%;
 }
 
 .bar span.points-3 {
-    width: 70%;
+  width: 70%;
 }
 
 .bar span.points-4 {
-    width: 60%;
+  width: 60%;
 }
 
 .bar span.points-5 {
-    width: 50%;
+  width: 50%;
 }
 
 .bar span.points-6 {
-    width: 40%;
+  width: 40%;
 }
 
 .bar span.points-7 {
-    width: 30%;
+  width: 30%;
 }
 
 .bar span.points-8 {
-    width: 20%;
+  width: 20%;
 }
