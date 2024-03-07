@@ -4,16 +4,15 @@ var i = 0,
   isParagraph = false;
 
 var textArray = [
-  "| 💡 Technology is anything that wasn’t around when you were born. 💡 - Alan Kay",
-  "| 💡 The advance of technology is based on making it fit in so that you don’t really even notice it, so it’s part of everyday life. 💡 - Bill Gates",
-  "| 💡 The technology you use impresses no one. The experience you create with it is everything. 💡 - Sean Gerety",
-  "| 💡 The science of today is the technology of tomorrow. 💡 - Edward Teller",
-  "| 💡 The most important and urgent problems of the technology of today are no longer the satisfactions of the primary needs or of archetypal wishes, but the reparation of the evils and damages by the technology of yesterday. 💡 - Dennis Gabor",
-  "| 💡 The greatest danger in modern technology isn't that machines will begin to think like people, but that people will begin to think like machines. 💡 - Sydney J. Harris",
-  "| 💡 It has become appallingly obvious that our technology has exceeded our humanity. 💡 - Albert Einstein",
-  "| 💡 The real problem is not whether machines think, but whether men do. 💡 - B.F. Skinner",
-  "| 💡 The art challenges the technology, and the technology inspires the art. 💡 - John Lasseter",
-  "| 💡 Technology is just a tool. In terms of getting the kids working together and motivating them, the teacher is the most important. 💡 - Bill Gates",
+  "| 'Code is like humor. When you have to explain it, it’s bad.' - Cory House",
+  "| 'The best way to predict the future is to invent it.' - Alan Kay",
+  "| 'Software is a great combination of artistry and engineering.' - Bill Gates",
+  "| 'The Internet is becoming the town square for the global village of tomorrow.' - Bill Gates",
+  "| 'The computer was born to solve problems that did not exist before.' - Bill Gates",
+  "| 'Simplicity is the soul of efficiency.' - Austin Freeman",
+  "| 'The only thing that interferes with my learning is my education.' - Albert Einstein",
+  "| 'The function of good software is to make the complex appear to be simple.' - Grady Booch",
+  "| 'Any sufficiently advanced technology is indistinguishable from magic.' - Arthur C. Clarke",
 ];
 
 var speedForward = 50,
