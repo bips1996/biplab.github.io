@@ -1,15 +1,16 @@
+<!DOCTYPE html>
 <html>
 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Favicons -->
         <link href="./images/min.png" rel="icon">
-        <script defer src="theme.js"></script>
-        <link rel="stylesheet" type="text/css" href="pjstyle.css" />
-        <link rel="stylesheet" type="text/css" href="footer.css" />
-        <link rel="stylesheet" type="text/css" href="skills.css" />
-        <link rel="stylesheet" type="text/css" href="underlined.css" />
-        <link rel="stylesheet" href="style.css" />
+        <script defer src="js/theme.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/pjstyle.css" />
+        <link rel="stylesheet" type="text/css" href="css/footer.css" />
+        <link rel="stylesheet" type="text/css" href="css/skills.css" />
+        <link rel="stylesheet" type="text/css" href="css/underlined.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <script
@@ -159,311 +160,13 @@
         </header>
 
         <main style="background: #ffffff">
-            <div class="about-section" id="about">
-                <div class="about">
-                    <h1>ABOUT</h1>
-                    <hr />
-                    <p class="about-description">
-                        I am a social individual, but I don't engage much in
-                        social media where memories are often buried within
-                        posts. My interests range from the delightful fragrance
-                        of flowers🌻 to the refreshing scent of a clover-filled
-                        breeze. As someone immersed in the field of computer
-                        science🧑‍💻, I am particularly passionate about
-                        tackling new problems that can have a meaningful
-                        societal impact, whether they are easily solvable or
-                        not. This journey not only helps me refine my approach
-                        and skills but also contributes to my continuous
-                        learning. I draw significant inspiration from Steve Jobs
-                        as a person and consider "Sapiens" a highly influential
-                        book.
-                    </p>
-                    <a href="./timeline/index.html"><span class="timeline">💼
-                            Checkout
-                            my
-                            Experience</span></a>
-                </div>
-            </div>
+            <div id="about"></div>
+            <div id="projects"></div>
+            <div id="skills"></div>
 
-            <div class="project-section" id="projects">
-                <div class="project-heading">
-                    <h1>Portfolio</h1>
-                    <hr />
-                </div>
-                <div class="project">
-                    <div class="container">
-                        <div class="box">
-                            <div class="boxContent">
-                                <i class="fa fa-pencil-square-o icon"></i>
-                                <h1 class="title">Newton Classroom</h1>
-                                <p class="desc">
-                                    A modern, powerful and unified educational
-                                    management system, that helps you run your
-                                    School more intelligently
-                                    <br /><br />
-                                    <kbd class="strongElement"> Backend
-                                        Engineer</kbd>
-                                </p>
-                            </div>
-                            <a
-                                href="https://www.newtonclassroom.com/"
-                                target="_blank"></a>
-                        </div>
+            <script src="load-sections.js"></script>
 
-                        <div class="box">
-                            <div class="boxContent">
-                                <i class="fa fa-gamepad icon"></i>
-                                <h1 class="title">Checkers</h1>
-                                <p class="desc">
-                                    Mini-max algorithm with alpha-beta pruning
-                                    based bot game that I developed as part of
-                                    Academics.
-                                    <br /><br />
-                                    <kbd class="strongElement"> Python | Pygame
-                                        | AI bot</kbd>
-                                </p>
-                            </div>
-                            <a
-                                href="https://github.com/bips1996/CheckersGame-Minimax"
-                                target="_blank"></a>
-                        </div>
-                        <div class="box">
-                            <div class="boxContent">
-                                <i class="fa fa-file-code-o icon"></i>
-                                <h1 class="title">TCP file server</h1>
-                                <p class="desc">
-                                    A File server using Java and Socket
-                                    programming<br /><br />
-                                    <kbd class="strongElement"> Java |
-                                        Socket </kbd> &nbsp
-                                </p>
-                            </div>
-                            <a
-                                href="https://github.com/bips1996/File-Server-Java"
-                                target="_blank"></a>
-                        </div>
-
-                        <div class="box">
-                            <div class="boxContent">
-                                <i class="fa fa-connectdevelop icon"></i>
-                                <h1 class="title">Prim's algorithm</h1>
-                                <p class="desc">
-                                    Optimization of Prim's algorithm for finding
-                                    MST by implementing adjacency list with
-                                    min-Heap.
-                                    <br />
-                                    <kbd class="strongElement">C++</kbd>
-                                </p>
-                            </div>
-                            <a
-                                href="https://github.com/bips1996/Prim-s-Algorithm"
-                                target="_blank"></a>
-                        </div>
-
-                        <!-- <div class="box">
-                            <div class="boxContent">
-                                <i class="fa fa-bitcoin icon"></i>
-                                <h1 class="title">Smart Attendance</h1>
-                                <p class="desc">
-                                    smart contract based attendance
-                                    management.<br /><br />
-                                    <kbd class="strongElement"> Blockchain |
-                                        Solidity | Etherium</kbd>
-                                </p>
-                            </div>
-                            <a
-                                href="https://github.com/bips1996/BlockChainbased-Attendance-mmanagement"
-                                target="_blank"></a>
-                        </div> -->
-
-                        <div class="box">
-                            <div class="boxContent">
-                                <i class="fa fa-pencil-square-o icon"></i>
-                                <h1 class="title">Copycart</h1>
-                                <p class="desc">
-                                    A e-commerce backend for goods
-                                    exchange<br /><br />
-                                    <kbd class="strongElement"> GraphQL | Node |
-                                        MongoDB</kbd><br />
-                                </p>
-                            </div>
-                            <a
-                                href="https://github.com/bips1996/Copycart_Backend"
-                                target="_blank"></a>
-                        </div>
-
-                        <!-- <div class="box">
-                            <div class="boxContent">
-                                <i class="fa fa-play-circle-o icon"></i>
-                                <h1 class="title">Groovy</h1>
-                                <p class="desc">
-                                    A video streaming web appication<br /><br />
-                                    <kbd class="strongElement">Html | Javascript
-                                        | php | XAMPP </kbd><br />
-                                </p>
-                            </div>
-                            <a href="https://github.com/bips1996/Groovy"
-                                target="_blank"></a>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-section" id="skills">
-                <h1>My skills</h1>
-                <hr />
-                <div class="skill-container">
-                    <div class="box">
-                        <h4>Languages</h4>
-                        <div class="skill">
-                            <p class="name">Javascript</p>
-                            <div class="bar">
-                                <span class="points-8"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <p class="name">Python</p>
-                            <div class="bar">
-                                <span class="points-8"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <p class="name">Java</p>
-                            <div class="bar">
-                                <span class="points-7"></span>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <p class="name">C/C++</p>
-                            <div class="bar">
-                                <span class="points-8"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <p class="name">SQL</p>
-                            <div class="bar">
-                                <span class="points-8"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <h4>Backend</h4>
-                        <div class="skill">
-                            <p class="name">Node</p>
-                            <div class="bar">
-                                <span class="points-6"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <p class="name">Express</p>
-                            <div class="bar">
-                                <span class="points-8"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <p class="name">Koa</p>
-                            <div class="bar">
-                                <span class="points-8"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <p class="name">Fast api</p>
-                            <div class="bar">
-                                <span class="points-8"></span>
-                            </div>
-                        </div>
-
-                        <!-- <div class="skill">
-                            <p class="name">GraphQL</p>
-                            <div class="bar">
-                                <span class="points-7"></span>
-                            </div>
-                        </div> -->
-                    </div>
-
-                    <div class="box">
-                        <h4>Database</h4>
-                        <div class="skill">
-                            <p class="name">Postgres</p>
-                            <div class="bar">
-                                <span class="points-8"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <p class="name">MySQL</p>
-                            <div class="bar">
-                                <span class="points-6"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <p class="name">SQLite</p>
-                            <div class="bar">
-                                <span class="points-7"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <p class="name">MongoDB</p>
-                            <div class="bar">
-                                <span class="points-7"></span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="box">
-
-                        <h4>Infrastructure and Others</h4>
-                        <div class="skill">
-                            <p class="name">Linux</p>
-                            <div class="bar">
-                                <span class="points-7"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <p class="name">Docker</p>
-                            <div class="bar">
-                                <span class="points-7"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <p class="name">AWS</p>
-                            <div class="bar">
-                                <span class="points-6"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <p class="name">GOCD</p>
-                            <div class="bar">
-                                <span class="points-6"></span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <p class="name">Nginx</p>
-                            <div class="bar">
-                                <span class="points-7"></span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <script
-                src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
             <script>
                 var $root = $("html, body");
                 $('a[href^="#"]').click(function() {
@@ -476,7 +179,7 @@
                     return false;
                 });
             </script>
-            <script src="main.js"></script>
+            <script src="js/main.js"></script>
         </main>
 
         <!-- Site footer -->
