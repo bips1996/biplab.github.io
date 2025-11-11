@@ -1,0 +1,31 @@
+{
+  "work_experience": [
+    {
+      "period": "Present",
+      "title": "Software Engineer - III",
+      "company": "Verizon"
+    },
+    {
+      "period": "2022-25",
+      "title": "Software Engineer - II",
+      "company": "Newton Classroom"
+    },
+    {
+      "period": "2021-22",
+      "title": "Software Engineer",
+      "company": "Accenture Applied Intelligence"
+    }
+  ],
+  "academics": [
+    {
+      "period": "2018-21",
+      "title": "Master of Computer Applications",
+      "institution": "School Of Information Sciences, University Of Hyderabad"
+    },
+    {
+      "period": "2017",
+      "title": "Graduation (Physics)",
+      "institution": "Kendrapara Autonomous College, Utkal University"
+    }
+  ]
+}

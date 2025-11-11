@@ -2,8 +2,8 @@
 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script defer src="theme.js"></script>
-        <link rel="stylesheet" href="style.css" />
+        <script defer src="../theme.js"></script>
+        <link rel="stylesheet" href="../style.css" />
         <link rel="stylesheet" type="text/css" href="timeline.css" />
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -18,10 +18,12 @@
     </head>
 
     <body>
+        <script defer src="timeline.js"></script>
+
         <nav class="navbar">
             <ul class="navbar-nav">
                 <li class="logo">
-                    <a href="index.html" class="nav-link">
+                    <a href="../index.html" class="nav-link">
                         <span class="link-text logo-text">Biplaba</span>
                         <svg aria-hidden="true" focusable="false"
                             data-prefix="fad" data-icon="angle-double-right"
@@ -43,7 +45,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="./index.html" class="nav-link">
+                    <a href="../index.html" class="nav-link">
                         <i class="fa fa-home theme-icon" id="lightIcon"
                             style="font-size: 24px"></i>
                         <span class="link-text">Home</span>
@@ -111,49 +113,15 @@
 
         <main class="header">
             <h1> WORK EXPERIENCE</h1>
-            <div class="container">
+            <div class="container" id="workContainer">
+                <!-- Work experience blocks will be rendered here from timeline-data.json -->
+            </div>
+        </main>
 
-                <div class="timeline-block timeline-block-left">
-                    <div class="marker"></div>
-                    <div class="timeline-content">
-                        <h3>2022-24</h3>
-                        <span>Software Engineer - II <br />Newton
-                            Classroom</span>
-                    </div>
-                </div>
-
-                <div class="timeline-block timeline-block-right">
-                    <div class="marker"></div>
-                    <div class="timeline-content">
-                        <h3>2021-22</h3>
-                        <span>Software Engineer </span><br />
-                        <span>Accenture Applied Intelligence</span>
-                    </div>
-                </div>
-            </main>
-
-            <main class="header">
-                <h1>ACADEMICS</span></h1>
-            <div class="container">
-                <div class="timeline-block timeline-block-left">
-                    <div class="marker"></div>
-                    <div class="timeline-content">
-                        <h3>20218-21</h3>
-                        <span>Master of Computer Applications<br /> </span>
-                        <span>School Of Information Sciences <br /></span>
-                        <span>University Of Hyderabad</span>
-                    </div>
-                </div>
-
-                <div class="timeline-block timeline-block-right">
-                    <div class="marker"></div>
-                    <div class="timeline-content">
-                        <h3>2017</h3>
-                        <span>Graduation(Physics)<br /></span>
-                        <span>Kendrapara Autonomous College<br /></span>
-                        <span>Utkal University</span>
-                    </div>
-                </div>
+        <main class="header">
+            <h1>ACADEMICS</h1>
+            <div class="container" id="academicsContainer">
+                <!-- Academics blocks will be rendered here from timeline-data.json -->
             </div>
         </main>
     </body>
