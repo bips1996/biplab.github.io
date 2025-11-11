@@ -24,6 +24,9 @@
     </head>
 
     <body>
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress-bar"></div>
+
         <nav class="navbar">
             <ul class="navbar-nav">
                 <li class="logo">
@@ -132,6 +135,7 @@
         </nav>
 
         <header class="header">
+            <canvas id="particles-canvas"></canvas>
             <div class="biplaba-intro-heading">
                 <p class="gratitude">HI, I'AM</p>
                 <img class="bips_logo" src="images/bips.png" alt="bips" />
@@ -143,6 +147,7 @@
                     Software Engineer(Backend)
                 </h2>
             </div>
+
             <!-- <iframe
                 src="https://open.spotify.com/embed/track/0pqnGHJpmpxLKifKRmU6WP"
                 width="300" height="80" frameborder="0" allowtransparency="true"
@@ -152,7 +157,9 @@
                     Resume</span></a> &nbsp; &nbsp; &nbsp;
             <a href="https://www.linkedin.com/in/bips96/"><span
                     class="underline-opening">🖋
-                    Linekdin</span></a>
+                    LinkedIn</span></a> &nbsp; &nbsp; &nbsp;
+            <a href="./timeline/index.html"><span class="underline-opening">💼
+                    Work Experience</span></a>
             <div class="output" id="output">
                 <h2 class="cursor"></h2>
                 <p class="second-cursor"></p>
@@ -179,6 +186,7 @@
                     return false;
                 });
             </script>
+            <script src="js/particles.js"></script>
             <script src="js/main.js"></script>
         </main>
 
@@ -246,6 +254,11 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+            <i class="fa fa-arrow-up"></i>
+        </button>
     </body>
 
 </html>

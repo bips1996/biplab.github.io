@@ -15,16 +15,38 @@ body {
     border-radius: 10px;
     background-color: #0c2131c4;
     margin: 20px;
-    transition: 0.3s all ease-in-out;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
+    overflow: hidden;
     /* box-shadow: 0px 0px 15px #fffefd; */
     /* Link */
+}
+
+.container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
 }
 
 .project-heading hr {
     margin-top: -1%;
     width: 30%;
     border-top: 2px solid #ffffff;
+    animation: expandWidth 1.5s ease-out;
+}
+
+@keyframes expandWidth {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 30%;
+    }
 }
 
 .container .box .boxContent {
@@ -70,7 +92,12 @@ body {
 
 .container .box:hover {
     background: linear-gradient(130deg, #ffffff 0%, #dadada 100%);
-    box-shadow: none;
+    box-shadow: 0 10px 30px rgba(12, 33, 49, 0.3);
+    transform: translateY(-10px) scale(1.05);
+}
+
+.container .box:hover::before {
+    left: 100%;
 }
 
 .container .box:hover .icon,

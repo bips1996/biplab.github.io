@@ -1,11 +1,12 @@
 /* --- New Skills Grid Styles --- */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 2.2rem 2.2rem;
   justify-items: center;
-  align-items: flex-start;
-  margin: 2rem 0;
+  align-items: start;
+  margin: 3rem 0 1rem 0; /* increase vertical spacing */
+  min-height: 420px; /* ensure the section feels taller */
 }
 
 .skill-card {
@@ -101,7 +102,8 @@
 }
 
 .skill-section {
-  margin-top: 10%;
+  margin-top: 6%;
+  padding: 2.5rem 0; /* add vertical padding for height */
   justify-content: center;
 }
 
@@ -116,7 +118,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: auto;
+  min-height: 420px;
+  padding: 2.5rem 0 2.5rem 0;
   grid-gap: 10%;
 }
 

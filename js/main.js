@@ -116,3 +116,56 @@ function typeWriter(id, ar) {
     }
   }
 }
+
+// --- Scroll Progress Bar ---
+window.addEventListener('scroll', function() {
+  const scrollProgressBar = document.querySelector('.scroll-progress-bar');
+  if (!scrollProgressBar) return;
+  
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrollPercentage = (scrollTop / scrollHeight) * 100;
+  
+  scrollProgressBar.style.width = scrollPercentage + '%';
+});
+
+// --- Smooth Scroll Reveal Animation ---
+function revealOnScroll() {
+  const reveals = document.querySelectorAll('.about-section, .project-section, #skills, .contact-section');
+  
+  reveals.forEach(element => {
+    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top;
+    const elementVisible = 150;
+    
+    if (elementTop < windowHeight - elementVisible) {
+      element.classList.add('reveal-active');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+
+// Trigger reveal after sections are loaded
+setTimeout(revealOnScroll, 500);
+
+// --- Back to Top Button ---
+const backToTopButton = document.getElementById('back-to-top');
+
+if (backToTopButton) {
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+      backToTopButton.classList.add('visible');
+    } else {
+      backToTopButton.classList.remove('visible');
+    }
+  });
+
+  backToTopButton.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
