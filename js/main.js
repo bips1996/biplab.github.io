@@ -1,3 +1,38 @@
+// --- Interactive Skills Section Tooltip ---
+document.addEventListener('DOMContentLoaded', function () {
+  const grid = document.querySelector('.skills-grid');
+  const tooltip = document.getElementById('skill-tooltip');
+  if (!grid || !tooltip) return;
+
+  function showTooltip(e, skill, desc) {
+    tooltip.innerHTML = `<strong>${skill}</strong><br><span style='font-size:0.95em;'>${desc}</span>`;
+    tooltip.style.display = 'block';
+    const rect = e.target.getBoundingClientRect();
+    const scrollY = window.scrollY || window.pageYOffset;
+    const scrollX = window.scrollX || window.pageXOffset;
+    tooltip.style.left = (rect.left + rect.width / 2 + scrollX - tooltip.offsetWidth / 2) + 'px';
+    tooltip.style.top = (rect.top - tooltip.offsetHeight - 10 + scrollY) + 'px';
+  }
+
+  function hideTooltip() {
+    tooltip.style.display = 'none';
+  }
+
+  grid.querySelectorAll('.skill-logo').forEach(logo => {
+    logo.addEventListener('mouseenter', e => {
+      showTooltip(e, logo.dataset.skill, logo.dataset.desc);
+    });
+    logo.addEventListener('mouseleave', hideTooltip);
+    logo.addEventListener('touchstart', e => {
+      showTooltip(e, logo.dataset.skill, logo.dataset.desc);
+    });
+    logo.addEventListener('touchend', hideTooltip);
+    logo.addEventListener('focus', e => {
+      showTooltip(e, logo.dataset.skill, logo.dataset.desc);
+    });
+    logo.addEventListener('blur', hideTooltip);
+  });
+});
 var i = 0,
   a = 0,
   isBackspacing = false,
