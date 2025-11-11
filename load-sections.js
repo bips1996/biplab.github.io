@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
       })
       .then(function(html) {
         container.outerHTML = html; // replace placeholder with real section (preserves anchors)
+        
+        // Load portfolio.js after portfolio section is loaded
+        if (sec.id === 'projects') {
+          const script = document.createElement('script');
+          script.src = 'sections/portfolio.js';
+          document.body.appendChild(script);
+        }
       })
       .catch(function(err) {
         console.error(err);

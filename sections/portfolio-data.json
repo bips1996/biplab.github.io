@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "id": "newton-classroom",
+      "title": "Newton Classroom",
+      "icon": "fa-book",
+      "description": "A modern, powerful and unified educational management system that helps you run your School more intelligently. Professional work as Backend Engineer serving thousands of students.",
+      "technologies": ["Node.js", "React", "MongoDB"],
+      "language": "JavaScript",
+      "languageClass": "lang-javascript",
+      "category": "Backend Engineer",
+      "categoryIcon": "fa-briefcase",
+      "url": "https://www.newtonclassroom.com/"
+    },
+    {
+      "id": "checkers-ai",
+      "title": "Checkers AI",
+      "icon": "fa-gamepad",
+      "description": "Mini-max algorithm with alpha-beta pruning based AI bot game developed as part of academics. Features intelligent opponent with optimal game strategy.",
+      "technologies": ["Python", "Pygame", "AI"],
+      "language": "Python",
+      "languageClass": "lang-python",
+      "category": "Academic",
+      "categoryIcon": "fa-code-fork",
+      "url": "https://github.com/bips1996/CheckersGame-Minimax"
+    },
+    {
+      "id": "tcp-file-server",
+      "title": "TCP File Server",
+      "icon": "fa-server",
+      "description": "A file server implementation using Java Socket programming for network-based file transfer operations with multi-client support using TCP/IP protocol.",
+      "technologies": ["Java", "Socket", "Networking"],
+      "language": "Java",
+      "languageClass": "lang-java",
+      "category": "Server",
+      "categoryIcon": "fa-database",
+      "url": "https://github.com/bips1996/File-Server-Java"
+    },
+    {
+      "id": "prims-algorithm",
+      "title": "Prim's Algorithm",
+      "icon": "fa-sitemap",
+      "description": "Optimization of Prim's algorithm for finding Minimum Spanning Tree using adjacency list with min-Heap data structure for optimal performance.",
+      "technologies": ["C++", "Algorithms", "Graph Theory"],
+      "language": "C++",
+      "languageClass": "lang-cpp",
+      "category": "Optimized",
+      "categoryIcon": "fa-line-chart",
+      "url": "https://github.com/bips1996/Prim-s-Algorithm"
+    },
+    {
+      "id": "copycart",
+      "title": "Copycart",
+      "icon": "fa-shopping-cart",
+      "description": "E-commerce backend platform for goods exchange with modern GraphQL API, NoSQL database, authentication, and real-time updates for scalable operations.",
+      "technologies": ["GraphQL", "Node.js", "MongoDB"],
+      "language": "GraphQL",
+      "languageClass": "lang-graphql",
+      "category": "E-commerce",
+      "categoryIcon": "fa-shopping-bag",
+      "url": "https://github.com/bips1996/Copycart_Backend"
+    }
+  ]
+}

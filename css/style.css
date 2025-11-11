@@ -740,7 +740,11 @@ p.about-description {
 }
 
 .project-section {
-  background: url("../images/project.jpg") no-repeat 50% 50% fixed;
+  background-image: url("../images/project.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
   margin-top: 12%;
   padding-top: 3%;
 }
