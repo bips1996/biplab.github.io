@@ -33,8 +33,8 @@
                 const portfolioLink = navbar.querySelector('[data-portfolio-link]');
                 if (portfolioLink) portfolioLink.href = '../index.html#projects';
                 
-                const contactLink = navbar.querySelector('[data-contact-link]');
-                if (contactLink) contactLink.href = '../index.html#contact';
+                const aboutLink = navbar.querySelector('[data-about-link]');
+                if (aboutLink) aboutLink.href = '../index.html#about';
                 
             } else if (isResume) {
                 // Configure for resume page
@@ -47,8 +47,8 @@
                 const portfolioLink = navbar.querySelector('[data-portfolio-link]');
                 if (portfolioLink) portfolioLink.href = 'index.html#projects';
                 
-                const contactLink = navbar.querySelector('[data-contact-link]');
-                if (contactLink) contactLink.href = 'index.html#contact';
+                const aboutLink = navbar.querySelector('[data-about-link]');
+                if (aboutLink) aboutLink.href = 'index.html#about';
                 
             } else {
                 // Configure for main page
@@ -61,8 +61,8 @@
                 const portfolioLink = navbar.querySelector('[data-portfolio-link]');
                 if (portfolioLink) portfolioLink.href = '#projects';
                 
-                const contactLink = navbar.querySelector('[data-contact-link]');
-                if (contactLink) contactLink.href = '#contact';
+                const aboutLink = navbar.querySelector('[data-about-link]');
+                if (aboutLink) aboutLink.href = '#about';
                 
                 // Add smooth scrolling for anchor links on main page
                 setTimeout(() => {
@@ -73,13 +73,33 @@
                             if (href && href !== '#' && href.startsWith('#')) {
                                 e.preventDefault();
                                 const targetId = href.substring(1);
-                                const targetElement = document.getElementById(targetId);
-                                if (targetElement) {
-                                    targetElement.scrollIntoView({ 
-                                        behavior: 'smooth',
-                                        block: 'start'
-                                    });
-                                }
+                                
+                                // Determine offset based on screen size
+                                const isMobile = window.innerWidth <= 768;
+                                const offset = isMobile ? 20 : 80;
+                                
+                                // Wait for sections to load if needed (with retry logic)
+                                let retryCount = 0;
+                                const maxRetries = 10;
+                                
+                                const checkAndScroll = () => {
+                                    const targetElement = document.getElementById(targetId);
+                                    if (targetElement) {
+                                        const elementPosition = targetElement.getBoundingClientRect().top;
+                                        const offsetPosition = elementPosition + window.pageYOffset - offset;
+                                        
+                                        window.scrollTo({
+                                            top: offsetPosition,
+                                            behavior: 'smooth'
+                                        });
+                                    } else if (retryCount < maxRetries) {
+                                        // If element not found, try again after a short delay
+                                        retryCount++;
+                                        setTimeout(checkAndScroll, 100);
+                                    }
+                                };
+                                
+                                checkAndScroll();
                             }
                         });
                     });

@@ -23,6 +23,15 @@ html, body {
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Mobile scroll padding adjustment */
+@media only screen and (max-width: 768px) {
+  html, body {
+    scroll-padding-top: 20px;
+    scroll-padding-bottom: 100px;
+  }
 }
 
 body::-webkit-scrollbar {
