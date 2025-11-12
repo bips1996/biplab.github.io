@@ -57,53 +57,17 @@
                 
                 const homeLink = navbar.querySelector('[data-home-link-nav]');
                 if (homeLink) homeLink.href = '#home';
+
+                const aboutLink = navbar.querySelector('[data-about-link]');
+                if (aboutLink) aboutLink.href = '#about';
                 
                 const portfolioLink = navbar.querySelector('[data-portfolio-link]');
                 if (portfolioLink) portfolioLink.href = '#projects';
                 
-                const aboutLink = navbar.querySelector('[data-about-link]');
-                if (aboutLink) aboutLink.href = '#about';
+              
                 
-                // Add smooth scrolling for anchor links on main page
-                setTimeout(() => {
-                    const anchorLinks = navbar.querySelectorAll('a[href^="#"]');
-                    anchorLinks.forEach(link => {
-                        link.addEventListener('click', function(e) {
-                            const href = this.getAttribute('href');
-                            if (href && href !== '#' && href.startsWith('#')) {
-                                e.preventDefault();
-                                const targetId = href.substring(1);
-                                
-                                // Determine offset based on screen size
-                                const isMobile = window.innerWidth <= 768;
-                                const offset = isMobile ? 20 : 80;
-                                
-                                // Wait for sections to load if needed (with retry logic)
-                                let retryCount = 0;
-                                const maxRetries = 10;
-                                
-                                const checkAndScroll = () => {
-                                    const targetElement = document.getElementById(targetId);
-                                    if (targetElement) {
-                                        const elementPosition = targetElement.getBoundingClientRect().top;
-                                        const offsetPosition = elementPosition + window.pageYOffset - offset;
-                                        
-                                        window.scrollTo({
-                                            top: offsetPosition,
-                                            behavior: 'smooth'
-                                        });
-                                    } else if (retryCount < maxRetries) {
-                                        // If element not found, try again after a short delay
-                                        retryCount++;
-                                        setTimeout(checkAndScroll, 100);
-                                    }
-                                };
-                                
-                                checkAndScroll();
-                            }
-                        });
-                    });
-                }, 100);
+                // NOTE: anchor click handling is delegated globally in index.html
+                // to avoid duplicate/conflicting handlers. Navbar only sets hrefs.
             }
             
             // Insert navbar at the beginning of body

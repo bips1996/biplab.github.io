@@ -4,61 +4,8 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Favicons -->
-        <link href="./images/min.png" rel="icon">
-
-        <!-- Immediate hash scroll handler - MUST BE FIRST -->
-        <script>
-            // Prevent default browser hash scroll
-            if (window.location.hash) {
-                console.log('[EARLY] Hash detected:', window.location.hash);
-                
-                if ('scrollRestoration' in history) {
-                    history.scrollRestoration = 'manual';
-                }
-                
-                // Store hash and remove it temporarily
-                var targetHash = window.location.hash;
-                history.replaceState(null, null, ' ');
-                
-                // Restore hash and scroll after page loads
-                window.addEventListener('load', function() {
-                    console.log('[LOAD EVENT] Restoring hash and starting scroll check');
-                    history.replaceState(null, null, targetHash);
-                    
-                    // Wait for sections to load
-                    var checkElement = function(attempts) {
-                        attempts = attempts || 0;
-                        var target = document.querySelector(targetHash);
-                        
-                        console.log('[SCROLL CHECK] Attempt', attempts, 'for', targetHash, '- Found:', !!target);
-                        
-                        if (target) {
-                            console.log('[SCROLL] Target found! Scrolling to', targetHash);
-                            var isMobile = window.innerWidth <= 768;
-                            var offset = isMobile ? 20 : 80;
-                            var rect = target.getBoundingClientRect();
-                            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                            var targetPosition = rect.top + scrollTop - offset;
-                            
-                            console.log('[SCROLL] Position:', targetPosition, 'Offset:', offset);
-                            
-                            window.scrollTo({
-                                top: targetPosition,
-                                behavior: 'smooth'
-                            });
-                        } else if (attempts < 30) {
-                            setTimeout(function() { checkElement(attempts + 1); }, 200);
-                        } else {
-                            console.error('[SCROLL] Failed to find target after 30 attempts:', targetHash);
-                        }
-                    };
-                    
-                    setTimeout(function() { checkElement(0); }, 300);
-                });
-            }
-        </script>
-
-        <script defer src="js/theme.js"></script>
+        <link href="./images/min.png" rel="icon"> <script defer
+            src="js/theme.js"></script>
         <link rel="stylesheet" type="text/css" href="css/pjstyle.css" />
         <link rel="stylesheet" type="text/css" href="css/footer.css" />
         <link rel="stylesheet" type="text/css" href="css/skills.css" />
@@ -66,6 +13,8 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -134,40 +83,7 @@
             <script src="load-sections.js"></script>
 
             <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-            <script>
-                var $root = $("html, body");
-                
-                // Function to get appropriate offset based on screen size
-                function getScrollOffset() {
-                    return window.innerWidth <= 768 ? 20 : 80;
-                }
-                
-                // Function to scroll to a target
-                function scrollToTarget(href) {
-                    var target = $(href);
-                    
-                    if (target.length) {
-                        var offset = getScrollOffset();
-                        var scrollPos = target.offset().top - offset;
-                        
-                        $root.stop().animate({
-                            scrollTop: scrollPos
-                        }, 500);
-                        return true;
-                    }
-                    return false;
-                }
-                
-                // Handle anchor clicks (for on-page navigation)
-                $(document).on('click', 'a[href^="#"]', function(e) {
-                    var href = $.attr(this, 'href');
-                    if (href && href !== '#') {
-                        e.preventDefault();
-                        scrollToTarget(href);
-                        return false;
-                    }
-                });
-            </script>
+            <script src="js/anchor-scroll.js"></script>
             <script src="js/particles.js"></script>
             <script src="js/main.js"></script>
             <script src="js/profile-flip.js"></script>
