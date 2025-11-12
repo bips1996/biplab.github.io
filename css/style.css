@@ -700,6 +700,43 @@ p.cursor::after {
   width: 2px;
 }
 
+/* Logo Flip Card Container */
+.logo-flip-container {
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.logo-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.logo-flip-container.flipped .logo-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.logo-flip-front,
+.logo-flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-flip-back {
+  transform: rotateY(180deg);
+}
+
 img.bips_logo {
   /* padding: 10px; */
   border-radius: 50%;
@@ -709,6 +746,19 @@ img.bips_logo {
   animation: logoFloat 5s ease-in-out infinite, mymove 5s infinite;
   box-shadow: 1px 1px 2px #0c2131, 0 0 25px #0c2131, 0 0 5px #0c2131;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.bips_logo.cartoon-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ff6b6b, #feca57);
+  border: 1px solid #0c2131;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  animation: logoFloat 5s ease-in-out infinite, mymove 5s infinite;
+  box-shadow: 1px 1px 2px #0c2131, 0 0 25px #0c2131, 0 0 5px #0c2131;
 }
 
 img.bips_logo:hover {
@@ -1031,24 +1081,50 @@ img.bips_logo:hover {
   gap: 12px;
 }
 
-.profile-image-placeholder {
+/* Flip Card Container */
+.profile-flip-container {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #6649b8, #00d4ff);
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.profile-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.profile-flip-container.flipped .profile-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.profile-flip-front,
+.profile-flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  box-shadow: 0 8px 24px rgba(102, 73, 184, 0.3);
-  animation: float 3s ease-in-out infinite;
 }
 
-.profile-initials {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: white;
-  letter-spacing: 2px;
+.profile-flip-back {
+  transform: rotateY(180deg);
+}
+
+.profile-image-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #6649b8;
+  box-shadow: 0 8px 24px rgba(102, 73, 184, 0.3);
+  animation: float 3s ease-in-out infinite;
+  object-fit: cover;
 }
 
 .profile-status {

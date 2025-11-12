@@ -43,12 +43,27 @@ body {
 
 h1 {
   text-align: center;
-  font-weight: 300;
-  color: #2c3e50;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  color: #163149;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
   position: relative;
   z-index: 1;
+  display: inline-block;
+  width: 100%;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #6649b8, #00d4ff);
+  border-radius: 2px;
 }
 
 h1 span {
@@ -57,6 +72,7 @@ h1 span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  display: none;
 }
 
 .container {
@@ -399,3 +415,14 @@ h1 span {
   }
 }
 
+/* Animation for header */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

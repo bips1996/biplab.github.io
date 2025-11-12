@@ -1,7 +1,8 @@
 // Navbar loader - dynamically loads and configures the navbar
 (function() {
-    // Determine base path
+    // Determine base path and page type
     const isTimeline = window.location.pathname.includes('/timeline');
+    const isResume = window.location.pathname.includes('resume.html');
     const basePath = isTimeline ? '..' : '.';
     
     // Load navbar HTML
@@ -34,6 +35,20 @@
                 
                 const contactLink = navbar.querySelector('[data-contact-link]');
                 if (contactLink) contactLink.href = '../index.html#contact';
+                
+            } else if (isResume) {
+                // Configure for resume page
+                const brandLink = navbar.querySelector('[data-home-link]');
+                if (brandLink) brandLink.href = 'index.html';
+                
+                const homeLink = navbar.querySelector('[data-home-link-nav]');
+                if (homeLink) homeLink.href = 'index.html';
+                
+                const portfolioLink = navbar.querySelector('[data-portfolio-link]');
+                if (portfolioLink) portfolioLink.href = 'index.html#projects';
+                
+                const contactLink = navbar.querySelector('[data-contact-link]');
+                if (contactLink) contactLink.href = 'index.html#contact';
                 
             } else {
                 // Configure for main page
