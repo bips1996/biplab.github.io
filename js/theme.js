@@ -18,4 +18,10 @@ function toggleTheme() {
   localStorage.setItem("theme", next);
 }
 
-document.getElementById("themeButton").onclick = toggleTheme;
+// Safely attach theme toggle if the button exists on the page
+(function() {
+  const btn = document.getElementById('themeButton');
+  if (btn) {
+    btn.onclick = toggleTheme;
+  }
+})();

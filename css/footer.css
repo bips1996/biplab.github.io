@@ -1,0 +1,78 @@
+/* Footer styling */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.contact-section {
+  margin-bottom: 0.5rem; /* tighter spacing */
+}
+
+.contact-heading {
+  margin-bottom: 0.5rem;
+}
+
+.contact-heading h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.contact-description {
+  margin: 0.25rem 0; /* reduce vertical margin */
+  font-size: 0.95rem;
+}
+
+.social {
+  display: flex;
+  gap: 1rem; /* reduce icon gaps to save height */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social div {
+  transition: transform 0.3s ease;
+}
+
+.social div:hover {
+  transform: scale(1.2);
+}
+
+.social i {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.social .git {
+  color: #333;
+}
+
+.social .in {
+  color: #0a66c2;
+}
+
+.social .fb {
+  color: #1877f2;
+}
+
+.social .whatsapp {
+  color: #25d366;
+}
+
+.social .insta {
+  color: #e4405f;
+}
+
+.social .mail {
+  color: #d93025;
+}
+
+/* Dark theme adjustments */
+:root[data-theme="dark"] .social .git {
+  color: #fff;
+}

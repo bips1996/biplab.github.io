@@ -1,0 +1,76 @@
+{
+  "work_experience": [
+    {
+      "period": "2025 - Present",
+      "title": "Software Engineer - III",
+      "company": "Verizon",
+      "location": "Hyderabad, India",
+      "description": "Leading development of scalable microservices solutions for enterprise telecommunications systems.",
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "AWS",
+        "Elastic Search",
+        "DBMS",
+        "Project Management"
+      ],
+      "logo": "https://logo.clearbit.com/verizon.com"
+    },
+    {
+      "period": "2022 - 2025",
+      "title": "Software Engineer - II",
+      "company": "Newton Classroom",
+      "location": "Hyderabad, India",
+      "description": "Developed interactive educational platforms and learning management systems serving thousands of students.",
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Postgres",
+        "Docker",
+        "AWS",
+        "CircleCI"
+      ],
+      "achievements": [],
+      "logo": "../images/newton_classroom.png"
+    },
+    {
+      "period": "2021 - 2022",
+      "title": "Software Engineer",
+      "company": "Accenture Applied Intelligence",
+      "location": "Bangalore, India",
+      "description": "Built AI-powered MLOPs platforms and data pipelines for Fortune 500 clients.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "MLFlow",
+        "Postgres",
+        "Docker",
+        "Kubernetes"
+      ],
+      "achievements": [],
+      "logo": "https://logo.clearbit.com/accenture.com"
+    }
+  ],
+  "academics": [
+    {
+      "period": "2018 - 2021",
+      "title": "Master of Computer Applications",
+      "institution": "University Of Hyderabad",
+      "department": "School Of Information Sciences",
+      "location": "Hyderabad, India",
+      "description": "",
+      "achievements": ["CGPA: 8.65/10"],
+      "icon": "graduation-cap"
+    },
+    {
+      "period": "2015 - 2017",
+      "title": "B.Sc. in Physics",
+      "institution": "Utkal University",
+      "department": "Kendrapara Autonomous College",
+      "location": "Odisha, India",
+      "description": "",
+      "achievements": ["First Class with Distinction"],
+      "icon": "university"
+    }
+  ]
+}
