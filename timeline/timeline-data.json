@@ -14,7 +14,7 @@
         "DBMS",
         "Project Management"
       ],
-      "logo": "https://logo.clearbit.com/verizon.com"
+      "logo": "../images/verizon-logo.png"
     },
     {
       "period": "2022 - 2025",
@@ -48,7 +48,7 @@
         "Kubernetes"
       ],
       "achievements": [],
-      "logo": "https://logo.clearbit.com/accenture.com"
+      "logo": "../images/accenture-logo.png"
     }
   ],
   "academics": [
