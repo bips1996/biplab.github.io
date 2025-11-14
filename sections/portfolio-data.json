@@ -14,8 +14,8 @@
         "AWS",
         "CircleCI"
       ],
-      "language": "JavaScript",
-      "languageClass": "lang-javascript",
+      "language": "Java",
+      "languageClass": "lang-java",
       "category": "Backend Engineer",
       "categoryIcon": "fa-briefcase",
       "url": "https://www.newtonclassroom.com/"
